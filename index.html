@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinecrest Academy | Nurturing Minds, Inspiring Excellence</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- [1] HEADER -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#top" class="logo-area" id="logoLink">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" />
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-title">PINECREST</span>
+                    <span class="logo-subtitle">ACADEMY</span>
+                </div>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#academics" class="nav-link">Academics</a>
+                <a href="#staff" class="nav-link">Staff</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#fees" class="nav-link">Fees</a>
+                <a href="#admission" class="nav-link">Admission</a>
+                <a href="#faqs" class="nav-link">FAQs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#admission" class="cta-btn-header">Apply Now</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation Menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- [2] FULLSCREEN MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Navigation Menu">&times;</button>
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav-links">
+                <a href="#hero" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About School</a>
+                <a href="#academics" class="mobile-nav-link">Academics</a>
+                <a href="#staff" class="mobile-nav-link">Our Educators</a>
+                <a href="#gallery" class="mobile-nav-link">Gallery</a>
+                <a href="#fees" class="mobile-nav-link">Fee Structure</a>
+                <a href="#admission" class="mobile-nav-link">Admission Enquiry</a>
+                <a href="#faqs" class="mobile-nav-link">FAQs</a>
+                <a href="#contact" class="mobile-nav-link">Contact Us</a>
+            </nav>
+            <div class="mobile-menu-footer">
+                <p class="mobile-menu-phone">Call Us: <a href="tel:+919876543210">+91 98765 43210</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- [3] HERO SLIDER SECTION (auto-scrolling) -->
+    <section class="hero-slider" id="hero">
+        <div class="slider-wrapper" id="sliderWrapper">
+            
+            <!-- Slide 1 -->
+            <div class="slide active" data-index="0">
+                <div class="slide-image-container">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="slide-img" src="HERO_SLIDE_1_IMAGE" alt="Pinecrest Academy Campus Building">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="slide-badge">Welcome to Pinecrest Academy</div>
+                    <h1 class="slide-title">Empowering Minds, Shaping Futures</h1>
+                    <p class="slide-text">Providing top-tier education with modern facilities and holistic child development from Nursery to Class 12.</p>
+                    <div class="slide-actions">
+                        <a href="#admission" class="btn btn-primary">Apply Now</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide" data-index="1">
+                <div class="slide-image-container">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="slide-img" src="HERO_SLIDE_2_IMAGE" alt="Students engaging in modern laboratory work">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="slide-badge">Where Innovation Meets Tradition</div>
+                    <h1 class="slide-title">An Academic Learning Sanctuary</h1>
+                    <p class="slide-text">A vibrant learning community encouraging scientific enquiry, creative expression, and critical thinking skills.</p>
+                    <div class="slide-actions">
+                        <a href="#admission" class="btn btn-primary">Apply Now</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+  </div><!-- Slide 3 -->
+            <div class="slide" data-index="2">
+                <div class="slide-image-container">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="slide-img" src="HERO_SLIDE_3_IMAGE" alt="Students participating in athletic activities">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="slide-badge">A Foundation for Lifelong Success</div>
+                    <h1 class="slide-title">Unlock Your Potential</h1>
+                    <p class="slide-text">Enabling students to discover their inner passions through premium academics, interactive arts, and rigorous athletics.</p>
+                    <div class="slide-actions">
+                        <a href="#admission" class="btn btn-primary">Apply Now</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-arrow prev-arrow" id="prevSlide" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="slider-arrow next-arrow" id="nextSlide" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-index="0"></span>
+            <span class="slider-dot" data-index="1"></span>
+            <span class="slider-dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- [4] TRUST / STATS BAR -->
+    <section class="trust-stats-bar">
+        <div class="stats-container">
+            <div class="stat-item reveal">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <div class="stat-text-area">
+                    <h3 class="stat-number" data-target="1500">0</h3>
+                    <p class="stat-label">Active Students</p>
+                </div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                </div>
+                <div class="stat-text-area">
+                    <h3 class="stat-number" data-target="75">0</h3>
+                    <p class="stat-label">Expert Educators</p>
+                </div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <div class="stat-text-area">
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <p class="stat-label">Years of Legacy</p>
+                </div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-icon-wrapper">
+                    <svg class="stat-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <div class="stat-text-area">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p class="stat-label">Board Success Rate (%)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [5] ABOUT SCHOOL SECTION -->
+    <section class="about-section" id="about">
+        <div class="container-grid">
+            <div class="about-image-column reveal">
+                <div class="image-wrapper-bordered">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="about-school-img" src="ABOUT_SCHOOL_IMAGE" alt="Pinecrest Academy Admin Block and Main Courtyard">
+                    <div class="establishment-badge">
+                        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        <div class="badge-text">
+                            <span class="badge-number">Est. 1998</span>
+                            <span class="badge-lbl">CBSE Affiliated</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-content-column reveal">
+                <div class="section-badge">About Our School</div>
+                <h2 class="section-title">Nurturing Excellence and Fostering Leaders</h2>
+                <p class="section-paragraph">Pinecrest Academy has been a beacon of academic excellence and character building for over two decades. We emphasize a comprehensive, student-centered approach to learning, preparing our pupils to thrive in a dynamically changing global society.</p>
+                <p class="section-paragraph">Our state-of-the-art campus offers a nurturing environment where students are encouraged to think critically, communicate effectively, and collaborate creatively. Through our rigorous academic curriculum and diverse co-curricular programs, we foster well-rounded individuals.</p>
+                
+                <ul class="highlight-list">
+                    <li class="highlight-item">
+                        <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span>Modern STEAM-based Curriculum</span>
+                    </li>
+                    <li class="highlight-item">
+                        <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span>Highly Qualified & Passionate Educators</span>
+                    </li>
+                    <li class="highlight-item">
+                        <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span>State-of-the-art Science & Computer Labs</span>
+                    </li>
+                    <li class="highlight-item">
+                        <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span>Vibrant Sports, Arts & Co-curricular Programs</span>
+                    </li>
+                </ul>
+
+                <a href="#admission" class="btn btn-primary spacing-top">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- [6] PRINCIPAL'S MESSAGE SECTION -->
+    <section class="principal-section reveal">
+        <div class="section-container-narrow">
+            <div class="principal-card">
+                <div class="quote-mark-icon">“</div>
+                <div class="principal-profile">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="principal-avatar" src="PRINCIPAL_IMAGE" alt="Dr. Evelyn Wright, School Principal">
+                </div>
+                <div class="principal-message-content">
+                    <p class="principal-quote">At Pinecrest Academy, we believe in fostering an environment where curiosity meets excellence. Our goal is to empower every student to achieve their full academic potential and become compassionate, global-minded leaders of tomorrow.</p>
+                    <h4 class="principal-name">Dr. Evelyn Wright</h4>
+                    <p class="principal-qual">PhD in Education, M.Sc.</p>
+                </div>
+            </div>
+        </div>
+                      </section><!-- [7] ACADEMICS / PROGRAMS SECTION -->
+    <section class="academics-section" id="academics">
+        <div class="section-header-center reveal">
+            <div class="section-badge-center">Academics</div>
+            <h2 class="section-title-center">Educational Programs We Offer</h2>
+            <p class="section-desc-center">Providing a comprehensive pathway of learning from early childhood through advanced secondary studies.</p>
+        </div>
+
+        <div class="programs-grid container-wide reveal">
+            <!-- Program 1 -->
+            <div class="program-card">
+                <div class="program-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="program-img" src="PROGRAM_1_IMAGE" alt="Early Years Program">
+                </div>
+                <div class="program-body">
+                    <h3 class="program-title">Early Years (Nursery - UKG)</h3>
+                    <p class="program-text">A playful and sensory learning experience designed to build early cognitive and social skills.</p>
+                </div>
+            </div>
+            <!-- Program 2 -->
+            <div class="program-card">
+                <div class="program-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="program-img" src="PROGRAM_2_IMAGE" alt="Primary School Program">
+                </div>
+                <div class="program-body">
+                    <h3 class="program-title">Primary School (Class 1 - 5)</h3>
+                    <p class="program-text">Focusing on core literacy, numeracy, and scientific inquiry through interactive learning methodologies.</p>
+                </div>
+            </div>
+            <!-- Program 3 -->
+            <div class="program-card">
+                <div class="program-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="program-img" src="PROGRAM_3_IMAGE" alt="Middle School Program">
+                </div>
+                <div class="program-body">
+                    <h3 class="program-title">Middle School (Class 6 - 8)</h3>
+                    <p class="program-text">Strengthening critical thinking, language capabilities, and problem-solving abilities across structured disciplines.</p>
+                </div>
+            </div>
+            <!-- Program 4 -->
+            <div class="program-card">
+                <div class="program-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="program-img" src="PROGRAM_4_IMAGE" alt="Secondary School Program">
+                </div>
+                <div class="program-body">
+                    <h3 class="program-title">Secondary School (Class 9 - 10)</h3>
+                    <p class="program-text">Preparing students for CBSE board examinations with balanced academic rigor and deep conceptual clarity.</p>
+                </div>
+            </div>
+            <!-- Program 5 -->
+            <div class="program-card">
+                <div class="program-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="program-img" src="PROGRAM_5_IMAGE" alt="Senior Secondary Science Program">
+                </div>
+                <div class="program-body">
+                    <h3 class="program-title">Senior Secondary Science (Class 11 - 12)</h3>
+                    <p class="program-text">Focused preparation for higher education in engineering, medicine, and deep analytical sciences.</p>
+                </div>
+            </div>
+            <!-- Program 6 -->
+            <div class="program-card">
+                <div class="program-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="program-img" src="PROGRAM_6_IMAGE" alt="Senior Secondary Commerce Program">
+                </div>
+                <div class="program-body">
+                    <h3 class="program-title">Senior Secondary Commerce (Class 11 - 12)</h3>
+                    <p class="program-text">Comprehensive courses in business studies, corporate accountancy, economics, and modern financial systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [8] FACILITIES SECTION -->
+    <section class="facilities-section" id="facilities">
+        <div class="section-header-center reveal">
+            <div class="section-badge-center">Our Facilities</div>
+            <h2 class="section-title-center">World-Class Infrastructure</h2>
+            <p class="section-desc-center">An ecosystem tailored with rich learning environments to support academic, physical, and holistic growth.</p>
+        </div>
+
+        <div class="facilities-grid container-wide reveal">
+            <!-- Facility 1 -->
+            <div class="facility-card">
+                <div class="facility-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </div>
+                <h3 class="facility-title">Digital Library</h3>
+                <p class="facility-text">Well-stocked physical archives and digital portals with access to over 15,000 educational resource publications.</p>
+            </div>
+            <!-- Facility 2 -->
+            <div class="facility-card">
+                <div class="facility-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
+                </div>
+                <h3 class="facility-title">Modern Science Labs</h3>
+                <p class="facility-text">Advanced chemistry, physics, and biology labs fully equipped with accurate experimental instruments.</p>
+            </div>
+            <!-- Facility 3 -->
+            <div class="facility-card">
+                <div class="facility-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                </div>
+                <h3 class="facility-title">Smart Canteen</h3>
+                <p class="facility-text">Hygiene-certified cafeteria serving balanced, fresh meals prepared in sanitary conditions.</p>
+            </div>
+            <!-- Facility 4 -->
+            <div class="facility-card">
+                <div class="facility-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <h3 class="facility-title">Computer Laboratories</h3>
+                <p class="facility-text">Modern desktop arrays with gigabit networking, providing structured courses in STEM and coding paradigms.</p>
+            </div>
+            <!-- Facility 5 -->
+            <div class="facility-card">
+                <div class="facility-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 20a11.15 11.15 0 0 1-12.8 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"></path></svg>
+                </div>
+                <h3 class="facility-title">Premium Sports Academy</h3>
+                <p class="facility-text">Extensive fields for soccer, basketball courts, standard athletic tracks, and dedicated physical instructors.</p>
+            </div>
+            <!-- Facility 6 -->
+            <div class="facility-card">
+                <div class="facility-icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                </div>
+                <h3 class="facility-title">Secure Transport</h3>
+                <p class="facility-text">Fully GPS-tracked bus infrastructure serving key destinations with adult supervision on all routes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- [9] STAFF / TEACHERS SECTION -->
+    <section class="staff-section" id="staff">
+        <div class="section-header-center reveal">
+            <div class="section-badge-center">Our Team</div>
+            <h2 class="section-title-center">Meet Our Dedicated Educators</h2>
+            <p class="section-desc-center">An expert assembly of academics passionate about shaping resilient students through structured mentoring.</p>
+        </div>
+
+        <div class="staff-grid container-wide reveal">
+            <!-- Staff 1 -->
+            <div class="staff-card">
+                <div class="staff-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="staff-img" src="STAFF_1_IMAGE" alt="Mr. Robert Chen">
+                </div>
+                <h3 class="staff-name">Mr. Robert Chen</h3>
+                <div class="staff-badge">Senior Mathematics Educator</div>
+            </div>
+            <!-- Staff 2 -->
+            <div class="staff-card">
+                <div class="staff-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="staff-img" src="STAFF_2_IMAGE" alt="Dr. Sarah Johnson">
+                </div>
+                <h3 class="staff-name">Dr. Sarah Johnson</h3>
+                <div class="staff-badge">Head of Scientific Studies</div>
+            </div>
+            <!-- Staff 3 -->
+            <div class="staff-card">
+                <div class="staff-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="staff-img" src="STAFF_3_IMAGE" alt="Mrs. Priya Sharma">
+                </div>
+                <h3 class="staff-name">Mrs. Priya Sharma</h3>
+                <div class="staff-badge">English Language & Literature</div>
+            </div>
+            <!-- Staff 4 -->
+            <div class="staff-card">
+                <div class="staff-img-wrapper">
+                    <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                    <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                    <img class="staff-img" src="STAFF_4_IMAGE" alt="Mr. Marcus Brody">
+                </div>
+                <h3 class="staff-name">Mr. Marcus Brody</h3>
+                <div class="staff-badge">Social Sciences & History</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [10] GALLERY SECTION -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header-center reveal">
+            <div class="section-badge-center">Gallery</div>
+            <h2 class="section-title-center">Moments of Inspiration & Celebration</h2>
+            <p class="section-desc-center">Capturing visual glimpses of our classroom academic explorations, sports accomplishments, and art exhibitions.</p>
+        </div>
+
+        <div class="gallery-grid container-wide reveal">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_1_IMAGE" alt="Academic Science Exhibition Project">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_2_IMAGE" alt="School Annual Athletics Tournament">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_3_IMAGE" alt="Creative Fine Arts Workshop">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_4_IMAGE" alt="Students in Modern Computer Science Lab">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 5 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_5_IMAGE" alt="Independence Day Celebration Assembly">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 6 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_6_IMAGE" alt="Primary School Interactive Storytelling">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 7 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_7_IMAGE" alt="Music Ensemble Rehearsal Session">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 8 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_8_IMAGE" alt="Graduation Ceremony Milestone">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+            <!-- Gallery Item 9 -->
+            <div class="gallery-card">
+                <!-- IMAGE: Replace PLACEHOLDER_NAME with your image URL -->
+                <!-- EXAMPLE: src="https://i.ibb.co/abc123/your-image.jpg" -->
+                <img class="gallery-img" src="GALLERY_9_IMAGE" alt="Interschool Robotics Championship">
+                <div class="gallery-overlay">
+                    <span class="zoom-icon">+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [11] FEE STRUCTURE SECTION -->
+    <section class="fees-section" id="fees">
+        <div class="section-header-center reveal">
+            <div class="section-badge-center">Fee Structure</div>
+            <h2 class="section-title-center">Transparent & Affordable Fees</h2>
+            <p class="section-desc-center">Outline of standard instructional rates for the academic session.</p>
+        </div>
+
+        <div class="container-wide reveal">
+            <div class="table-responsive-wrapper">
+                <table class="fees-table">
+                    <thead>
+                        <tr>
+                            <th>Class Category</th>
+                            <th>Monthly Tuition Fee</th>
+                            <th>Annual Activity Fee</th>
+                            <th>Admission Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Early Years (Nursery to UKG)</strong></td>
+                            <td>$150</td>
+                            <td>$1,800</td>
+                            <td><span class="admission-badge-open">Open</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Primary School (Class 1 to 5)</strong></td>
+                            <td>$180</td>
+                            <td>$2,160</td>
+                            <td><span class="admission-badge-open">Open</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Middle School (Class 6 to 8)</strong></td>
+                            <td>$200</td>
+                            <td>$2,400</td>
+                            <td><span class="admission-badge-open">Open</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secondary School (Class 9 to 10)</strong></td>
+                            <td>$220</td>
+                            <td>$2,640</td>
+                            <td><span class="admission-badge-open">Open</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Senior Secondary (Class 11 to 12)</strong></td>
+                            <td>$250</td>
+                            <td>$3,000</td>
+                            <td><span class="admission-badge-open">Open</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="fees-disclaimer"><strong>N<!-- [12] ADMISSION / ENQUIRY FORM SECTION -->
+    <section class="admission-section" id="admission">
+        <div class="container-grid-equal align-center">
+            
+            <div class="admission-trust-column reveal">
+                <div class="section-badge-light">Admissions Open</div>
+                <h2 class="section-title-white">Begin Your Educational Odyssey with Us</h2>
+                <p class="section-text-white-muted">Submit an online information inquiry today. Our administration division handles admissions on rolling parameters and coordinates family campus visits within 24 working hours.</p>
+                
+                <div class="trust-points-list">
+                    <div class="trust-point-card">
+                        <div class="trust-point-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        </div>
+                        <div class="trust-point-details">
+                            <h4 class="trust-point-heading">Flexible Onboarding Calendar</h4>
+                            <p class="trust-point-text">Simplified assessment structure for rolling term applications.</p>
+                        </div>
+                    </div>
+                    <div class="trust-point-card">
+                        <div class="trust-point-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <div class="trust-point-details">
+                            <h4 class="trust-point-heading">Quick Response Turnaround</h4>
+                            <p class="trust-point-text">Dedicated administrative response provided within 24 hours.</p>
+                        </div>
+                    </div>
+                    <div class="trust-point-card">
+                        <div class="trust-point-icon">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                        </div>
+                        <div class="trust-point-details">
+                            <h4 class="trust-point-heading">Secure & Supportive Framework</h4>
+                            <p class="trust-point-text">A safe facility monitored constantly with high standard pastoral care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admission-form-column reveal">
+                <div class="form-card-container">
+                    <h3 class="form-card-title">Admission Enquiry Form</h3>
+                    <form id="admissionForm" onsubmit="event.preventDefault(); submitAdmission();" novalidate>
+                        
+                        <div class="form-group">
+                            <label for="fStudentName">Student Name *</label>
+                            <input type="text" id="fStudentName" class="form-control" placeholder="Enter student's full name">
+                            <span class="error-msg" id="errStudentName">Student name is required.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fParentName">Parent / Guardian Name *</label>
+                            <input type="text" id="fParentName" class="form-control" placeholder="Enter parent/guardian full name">
+                            <span class="error-msg" id="errParentName">Parent name is required.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fMobile">WhatsApp Contact Mobile *</label>
+                            <input type="tel" id="fMobile" class="form-control" placeholder="10-digit mobile number">
+                            <span class="error-msg" id="errMobile">A valid mobile contact is required.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fClass">Grade Class Applying For *</label>
+                            <select id="fClass" class="form-control">
+                                <option value="">Select Target Class...</option>
+                                <option value="Nursery">Nursery / Preschool</option>
+                                <option value="LKG">LKG</option>
+                                <option value="UKG">UKG</option>
+                                <option value="Class 1">Class 1</option>
+                                <option value="Class 2">Class 2</option>
+                                <option value="Class 3">Class 3</option>
+                                <option value="Class 4">Class 4</option>
+                                <option value="Class 5">Class 5</option>
+                                <option value="Class 6">Class 6</option>
+                                <option value="Class 7">Class 7</option>
+                                <option value="Class 8">Class 8</option>
+                                <option value="Class 9">Class 9</option>
+                                <option value="Class 10">Class 10</option>
+                                <option value="Class 11">Class 11</option>
+                                <option value="Class 12">Class 12</option>
+                                <option value="Other">Other Specialized Program</option>
+                            </select>
+                            <span class="error-msg" id="errClass">Please specify the grade application.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fExtra">Previous Academic School Details (Optional)</label>
+                            <input type="text" id="fExtra" class="form-control" placeholder="Name of previous educational center">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fMsg">Specific Educational Requirements / Inquiry Message</label>
+                            <textarea id="fMsg" class="form-control" rows="4" placeholder="Write any specific requirements or questions here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit-form">
+                            <svg class="whatsapp-inline-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.993L2 22l5.13-1.347a9.927 9.927 0 0 0 4.877 1.28h.005c5.505 0 9.989-4.478 9.99-9.984A9.945 9.945 0 0 0 12.012 2zm5.835 14.128c-.24.675-1.18 1.28-1.625 1.325-.435.045-.975.06-2.925-.72a10.37 10.37 0 0 1-4.44-3.9 4.913 4.913 0 0 1-1.02-2.61c0-1.74.915-2.595 1.245-2.94.33-.345.735-.435.975-.435.24 0 .48 0 .69.015.225.015.525-.09.825.63.3.72 1.02 2.49 1.11 2.67.09.18.15.39.03.63-.12.24-.225.375-.45.63a13.3 13.3 0 0 1-.36.465c-.18.21-.375.435-.165.795.21.36.93 1.53 1.995 2.475 1.365 1.215 2.52 1.59 2.88 1.77.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.085 1.025 2.445 1.205.36.18.6.27.69.42.09.15.09.87-.15 1.545z"/></svg>
+                            Send Enquiry via WhatsApp
+                        </button>
+
+                        <p class="form-note">Your details will be formatted and securely routed straight to our school WhatsApp registration lines.</p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- [13] FAQs SECTION -->
+    <section class="faqs-section" id="faqs">
+        <div class="section-header-center reveal">
+            <div class="section-badge-center">FAQs</div>
+            <h2 class="section-title-center">Frequently Asked Questions</h2>
+            <p class="section-desc-center">Answers to essential enrollment and programmatic operational questions about Pinecrest Academy.</p>
+        </div>
+
+        <div class="section-container-narrow reveal">
+            <div class="accordion-group">
+                
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span class="accordion-title">What is the default teacher-student classroom ratio?</span>
+                        <span class="accordion-icon-box"></span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-content">
+                            <p>We maintain an optimal ratio of 1:25. This permits active educational facilitation, personalized student learning interventions, and regular development logs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span class="accordion-title">How are educational progress and behaviors reported?</span>
+                        <span class="accordion-icon-box"></span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-content">
+                            <p>Parents obtain customized accounts on our modern digital student management portal to view real-time logs, assignment grades, and general attendance, plus attending structured monthly PTM sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span class="accordion-title">Are co-curricular programs mandatory?</span>
+                        <span class="accordion-icon-box"></span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-content">
+                            <p>Yes, character development relies heavily on active participation. Pupils must choose at least one athletic program and one cultural club category every academic term.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span class="accordion-title">What safety precautions exist on campus?</span>
+                        <span class="accordion-icon-box"></span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-content">
+                            <p>The campus is fully secured by continuous multi-point CCTV coverage, background-verified security guards, and electronic turnstiles. Additionally, a resident first-aid clinic operates with certified personnel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span class="accordion-title">Is transport facility available for all local sectors?</span>
+                        <span class="accordion-icon-box"></span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-content">
+                            <p>We run modern, GPS-monitored buses across major metropolitan residential blocks. Safely guarded designated pickup locations are configured at admission confirmation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger" aria-expanded="false">
+                        <span class="accordion-title">What educational affiliation structure is offered?</span>
+                        <span class="accordion-icon-box"></span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="accordion-content">
+                            <p>We strictly comply with CBSE standards and requirements, offering curated specialized educational pathways in General Science, Commerce, and Humanities streams.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- [14] CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="section-header-center reveal">
+            <div class="section-badge-center">Contact Us</div>
+            <h2 class="section-title-center">Get in Touch with Our Staff</h2>
+            <p class="section-desc-center">We welcome you to reach out for physical campus walks, office schedules, or general procedural concerns.</p>
+        </div>
+
+        <div class="container-grid reveal">
+            
+            <div class="contact-cards-column">
+                <!-- Card 1 -->
+                <a href="tel:+919876543210" class="contact-medium-card">
+                    <d
